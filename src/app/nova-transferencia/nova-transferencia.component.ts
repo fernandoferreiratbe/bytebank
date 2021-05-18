@@ -7,4 +7,8 @@ import { Component } from "@angular/core";
 })
 export class NovaTransferenciaComponent {
 
+  transferir() {
+    console.log("Submit received successfully.");
+  }
+
 }

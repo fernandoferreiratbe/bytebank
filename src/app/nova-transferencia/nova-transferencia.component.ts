@@ -14,8 +14,16 @@ export class NovaTransferenciaComponent {
 
   transferir() {
     console.log("Submit received successfully.");
+
     const valorEmitir = { valor: this.valor, destino: this.destino };
     this.emissor.emit(valorEmitir);
+
+    this.limparCampos();
+  }
+
+  limparCampos() {
+    this.valor = 0;
+    this.destino = 0;
   }
 
 }

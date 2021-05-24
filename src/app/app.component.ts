@@ -11,9 +11,4 @@ export class AppComponent {
 
   constructor(private transferenciaService: TransferenciaService) {}
 
-  transferir($event: any) {
-    console.log('Received Event at app.component.ts -> ', $event);
-
-    this.transferenciaService.adiciona($event);
-  }
 }
